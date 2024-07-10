@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header class="encriptador__titulo">
+        <h1>Encriptador de texto - Alura Challenge</h1>
+    </header>
+
+    <main class="container">
+
+        <form class="encriptador__container" id="form_encriptador">
+            <textarea id="encriptador__texto" class="encriptador__texto" rows="18" form="form_encriptador"
+                placeholder=" Recuerda solo escribir letras minusculas y sin acentos!"></textarea>
+
+            <div class="encriptador__botones">
+                <button id="button-encryptor" class="boton" type="button">Encriptar</button>
+
+                <button id="button-decrypt" class="boton" type="button">Desencriptar</button>
+            </div>
+        </form>
+
+        <section class="salida__encriptacion-container">
+
+            <div id="salida__encriptacion-no-message" class="salida__encriptacion-no-message">
+                <img src="/img/buscando.jpg" alt="">
+
+                <p class="mensaje-no-encontrado">Ningún mensaje fue encontrado</p>
+                <p class="resultado_ingresa-texto">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+
+            <div id="salida__encriptacion" class="salida__encriptacion">
+
+                <textarea class="textoResultado" id="textoResultado" disabled></textarea>
+
+                <button id="botonCopiar" class="botonCopiar">Copiar</button>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="encriptador__footer">
+        <p class="desarrollo">© 2024 Desarrollado por Dulce Nevarez</p>
+    </footer>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
